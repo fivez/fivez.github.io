@@ -1,0 +1,129 @@
+.app_500 {
+   background-color:#0072C6;
+}
+
+.app_500_text_color {
+   color:rgba(255, 255, 255, 0.87)
+}
+
+.exceptionnal-times-card-image.mdl-card {
+  width: 320px;
+  height: 136px;
+  min-height:136px;
+  background: url('images/exceptional_card.png') center;
+  padding: 0px!important;
+}
+.exceptionnal-times-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.exceptionnal-times-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header-card-image.mdl-card {
+  width: 320px;
+  height: 190px;
+  min-height: 190px;
+  background: url('images/header.png') center;
+}
+.header-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.header-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.do-not-repeat-card-image.mdl-card {
+  width: 320px;
+  height: 143px;
+  min-height: 143px;
+  background: url('images/periodicity_not_repeat_card.png') center;
+}
+.repeat-card-image.mdl-card {
+  width: 320px;
+  height: 252px;
+  background: url('images/periodicity_repeat_card.png') center;
+}
+.repeat-until-card-image.mdl-card {
+  width: 320px;
+  height: 235px;
+  background: url('images/periodicity_repeat_until_card.png') center;
+}
+.repeat-everyxweek-card-image.mdl-card {
+  width: 320px;
+  height: 425px;
+  background: url('images/periodicity_every_week_card.png') center;
+}
+.swu-card-image.mdl-card {
+  width: 320px;
+  height: 104px;
+  min-height: 104px;
+  background: url('images/swu_card.png') center;
+}
+.disable-card-image.mdl-card {
+  width: 320px;
+  height: 257px;
+  background: url('images/disable_card.png') center;
+}
+.notification-skip-card-image.mdl-card {
+  width: 320px;
+  height: 148px;
+  min-height: 148px;
+  background: url('images/notification_skip.png') center;
+}
+.card-skip-card-image.mdl-card {
+  width: 320px;
+  height: 394px;
+  background: url('images/card_skip.png') center;
+}
+.header-picture-card-image.mdl-card {
+  width: 320px;
+  height: 252px;
+  background: url('images/header_with_picture.png') center;
+}
+.picture-settings-card-image.mdl-card {
+  width: 320px;
+  height: 223px;
+  background: url('images/picture_card_settings.png') center;
+}
+.weather-background-card-image.mdl-card {
+  width: 320px;
+  height: 569px;
+  background: url('images/weather_background_alarm.png') center;
+}
+.blurred-background-card-image.mdl-card {
+  width: 320px;
+  height: 569px;
+  background: url('images/blurred_background.png') center;
+}
+.alarm-tint-card-image.mdl-card {
+  width: 320px;
+  height: 453px;
+  background: url('images/alarm_tint.png') center;
+}
+.button-tint-card-image.mdl-card {
+  width: 320px;
+  height: 446px;
+  background: url('images/buttons_tint.png') center;
+}
+.ringtone-card-image.mdl-card {
+  width: 320px;
+  height: 446px;
+  background: url('images/buttons_tint.png') center;
+}
+
+
+.info-text {
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 4px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
