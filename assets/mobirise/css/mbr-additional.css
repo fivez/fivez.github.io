@@ -3495,7 +3495,7 @@ body {
 .cid-qsiRzrKWrL {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 .cid-qsiRzrKWrL .mbr-section-subtitle {
   color: #767676;
@@ -3966,7 +3966,7 @@ body {
 }
 .cid-qslO0sOMrI {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
   background-color: #ffffff;
 }
 .cid-qslO0sOMrI .mbr-section-subtitle {
@@ -4080,7 +4080,7 @@ body {
 }
 .cid-qslV1hcZ5I {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
   background-color: #ffffff;
 }
 .cid-qslV1hcZ5I .mbr-section-subtitle {
@@ -4709,7 +4709,7 @@ body {
 .cid-qslZZe8mzt {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 .cid-qslZZe8mzt .mbr-section-subtitle {
   color: #767676;
@@ -7835,6 +7835,85 @@ body {
   height: 25px;
   border-radius: 50%;
   content: '✓';
+}
+.cid-quygtHMRed {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+.cid-quygtHMRed .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-quygtHMRed .container-table {
+  margin: 0 auto;
+}
+.cid-quygtHMRed .scroll {
+  overflow-x: auto;
+  padding: 0;
+}
+.cid-quygtHMRed .dataTables_wrapper {
+  display: block;
+}
+.cid-quygtHMRed .dataTables_wrapper .search {
+  margin-bottom: .5rem;
+}
+.cid-quygtHMRed .dataTables_wrapper .table {
+  overflow-x: auto;
+}
+.cid-quygtHMRed table {
+  width: 100% !important;
+  margin-top: 6px;
+  border: 1px solid #cccccc;
+  margin-bottom: 0;
+}
+.cid-quygtHMRed table th {
+  border-top: none;
+  transition: all .2s;
+  border-bottom: none;
+}
+.cid-quygtHMRed table th:hover {
+  background: #cccccc;
+  color: #000000;
+}
+.cid-quygtHMRed table td {
+  border-top: 1px solid #cccccc;
+}
+.cid-quygtHMRed table.table {
+  background: #ffffff;
+}
+.cid-quygtHMRed .dataTables_filter {
+  text-align: right;
+  margin-bottom: .5rem;
+}
+.cid-quygtHMRed .dataTables_filter label {
+  display: inline;
+  white-space: normal !important;
+}
+.cid-quygtHMRed .dataTables_filter input {
+  display: inline;
+  width: auto;
+  margin-left: .5rem;
+  border-radius: 100px;
+  padding-left: 1rem;
+}
+.cid-quygtHMRed .dataTables_info {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  white-space: normal !important;
+}
+@media (max-width: 992px) {
+  .cid-quygtHMRed .dataTables_filter {
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .cid-quygtHMRed .dataTables_filter {
+    text-align: center;
+  }
+  .cid-quygtHMRed .dataTables_filter input {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
 }
 .cid-qsh3rA9NRc .navbar {
   padding: .5rem 0;
