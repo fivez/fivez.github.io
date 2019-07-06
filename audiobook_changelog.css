@@ -1,0 +1,94 @@
+fix {
+	font-family: 'Work Sans', sans-serif;
+}
+fix::before {
+	content: "[FIX] ";
+	font-family: 'Work Sans', sans-serif;
+	font-weight:600;
+	color:#ff6961;
+}
+
+new {
+	font-family: 'Work Sans', sans-serif;
+}
+new::before {
+	content: "[NEW] ";
+	font-family: 'Work Sans', sans-serif;
+	font-weight:600;
+	color:#77dd77;
+}
+
+
+.premium {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+}
+.premium::before  {
+	content: "[PREMIUM] ";
+	font-family: 'Work Sans', sans-serif;
+	font-weight:600;
+}
+
+.free {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+}
+.free::before  {
+	content: "[FREE] ";
+	font-family: 'Work Sans', sans-serif;
+	font-weight:600;
+}
+
+.category{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	font-weight:500;
+	font-variant: small-caps;
+}
+.category::before  {
+	content: "[";
+	font-family: 'Work Sans', sans-serif;
+	font-weight:500;
+}
+.category::after {
+	content: "]";
+	font-family: 'Work Sans', sans-serif;
+	font-weight:500;
+}
+
+.standard{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+}
+
+.version {
+	font-family: 'Work Sans', sans-serif;
+	&::before {
+      content: "\A";
+	  white-space: pre;
+    }
+}
+.version:after {
+  content: "\A";
+  white-space: pre;
+}
+
+.major {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.minor {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.major_feature {
+	font-size: 14px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+}
+
+p {
+	text-indent: 10%;
+}
