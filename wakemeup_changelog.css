@@ -89,6 +89,18 @@ new::before {
 	font-weight: bold;
 }
 
+.title {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.reference {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+}
+
 p {
 	text-indent: 10%;
 }
