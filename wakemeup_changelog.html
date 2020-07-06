@@ -9,6 +9,27 @@
 <body>
 
 	<p>
+		<span class="version major">15.0</span>
+        <ul>
+        <li><new/><span class="major_feature">Added a new check at startup for phones made by manufacturers that do not comply to Android's standards and kill the application regularly. By doing so, the alarms never go off.</span>
+        <li><new/><span class="major_feature">New screen for editing an alarm. It is now easier to read and to find which options are available and can be changed.</span>
+        <li><new/><span class="premium">The "Activate/Deactivate" Tasker plugin now refreshes its alarms when coming back to it.</span>
+        <li><new/><span class="premium">The "Activate/Deactivate" Tasker plugin now sorts its alarms by name.</span>
+        <li><new/><span class="premium">The "Activate/Deactivate" Tasker plugin now permits to select multiple alarms.</span>
+        <li><new/><span class="premium">The "Create Alarm" Tasker plugin now permits to create an alarm that will go off X minutes after the event that triggered the plugin occurred in Tasker. To do so, no <i>%wmualarmhour</i> variable should be set. The <i>%wmualarmminute</i> is sufficient.</span>
+		<li><new/><span class="premium">Tasker/Stopwatch : A new Tasker plugin permits to start, stop or reset the stopwatch as well as start a new lap following Tasker events.</span>
+        <li><new/><span class="free">Improved the local backup/restore feature.</span>
+		<li><fix/><span class="standard">Bugfixes and performance improvements.</span>
+        <li><new/><span class="free">Added an option in the Preferences/Other to change the language displayed in the application.</span>
+        <li><new/><span class="free">Added an option to not show again the warning about battery optimization.</span>
+		<li><new/><span class="premium">"Start scheduling on" is now set to the first date the alarm is saved. For already existing alarms, the alarm needs to be saved again for this to take effet.</span>
+		<li><span class="standard">Stopwatch improvements.</span>
+		<li><span class="standard">Android 5.0 and 5.1 are no longer supported.</span>
+		<li><span class="standard">Removed all translations that are less than 50% complete.</span>
+		</ul>
+	</p>
+
+	<p>
 		<span class="version major">14.0</span>
         <ul>
         <li><new/><span class="premium">Activation calendars: It is now possible to set an Activation Calendar for an alarm of the following types: Scheduled set as repeating, Calendar-based, High Frequency. By doing so, alarm will go off only on days having an all-day event set on the Activation Calendar. Those events can be filtered with specific tags. To prevent infinite search on calendars without any all-day events, only days up to 30 days into the future will be taken into account. But, on each event added, deleted or modified on a calendar, the alarm will automatically schedule itself again.</span>
