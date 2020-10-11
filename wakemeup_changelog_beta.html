@@ -10,11 +10,15 @@
 
 
 	<p>
-		<span class="version major">202009.02</span>
+		<span class="version major">202010.01</span>
         <ul>
+        <li><new/><span class="premium">All alarms created by the "Create alarm" tasker plugin are now automatically bound to Tasker.</span>
+        <li><new/><span class="premium">The "Delete alarm" tasker plugin now deletes all alarms with the given name, if those alarms are bound to Tasker or the setting to bind all alarms to Tasker is activated.</span>
+        <li><new/<<span class="standard">The per-alarm setting that permits to delete a not-repeating alarm after its last repeat can now also be set for repeating alarms. Those alarms will also be deleted, instead of deactivated, when the stop date is reached.</span>
         <li><fix/><span class="standard">Fixed Google Drive synchronization.</span>
-        <li><fix/><span class="standard">Fixed Tasker events about activating or deactivating an alarm.</span>
+        <li><fix/><span class="premium">Fixed Tasker events about activating or deactivating an alarm.</span>
         <li><fix/><span class="standard">Fixed the alarm card data not being refreshed the first alarm after having updated an alarm.</span>
+        <li><span class="standard">Removed the General Preference "Delete non repeating alarms..." in favor of a setting that can be set on a per-alarm basis.</span>
 		</ul>
 	</p>
 
