@@ -1,0 +1,1 @@
+c:\Programmes\Git\bin\git.exe push
