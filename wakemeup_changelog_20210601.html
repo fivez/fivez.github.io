@@ -9,10 +9,31 @@
 <body>
 
 	<p>
-		<span class="version major">202103.01</span>
-        <li><fix/><span class="premium">Fixed an issue regarding alarms that were scheduled on the same day at their usual time if an exceptional instance was set at a time before the usual time.</span>
-        <li><fix/><span class="standard">Fixed snoozing with volume buttons that could double the time of the snoozing.</span>
-        <li><fix/><span class="standard">Fixed selecting a music directory for random music ringtones that crashed on Android 11.</span>
+		<span class="version major">202106.01 Beta 01</span>
+        <li><new/><span class="major_feature">Android 11 support. Removed support for Android versions below Android 8.1</span>
+        <li><new/><span class="major_feature">Complete overhaul of the Edit Alarm screens. All standard options for an alarm are on the first screen. All other options are sorted on dedicated screens. Advanced options for each sections are stored in subsections, so that all screen are not flooded by options.</span>
+        <li><new/><span class="major_feature">Added the possibility to set as many calendars as necessary for calendar-based features.</span>
+        <li><new/><span class="standard">Reworked the Timers interface.</span>
+        <li><new/><span class="standard">Simplified Settings screens.</span>
+        <li><new/><span class="premium">[WEATHER FORECAST] Migrated Weather forecast retrieval from DarkSky (which won't be available for Android apps soon) to VisualCrossing.</span>
+        <li><new/><span class="premium">[WEATHER FORECAST] Thanks to the migration to VisualCrossing, weather forecast now is extended to 15 days from 7 days.</span>
+        <li><new/><span class="premium">[WEATHER FORECAST] New weather forecast screen.</span>
+        <li><new/><span class="standard">Lock/Unlock for alarms now uses the device lock pattern or biometrics.</span>
+        <li><span class="standard">Removed Fingerprint Challenge as it can't work anymore for  Android 11 devices. A dialog is displayed by the system when the fingerprint scanning workflow starts.
+This dialog box cannot be displayed when the phone is locked, which is nearly always the case when an alarm goes off. Because of this new restriction with Android 11, this feature has to be removed.</span>
+		</ul>
+	</p>
+
+
+	<p>
+		<span class="version major">202012.08</span>
+        <li><fix/><span class="standard">Fixed : alarm ringing forever for a "do not repeat" alarm that is on its last repeat.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">202012.07</span>
+        <li><fix/><span class="standard">Fixed a crash with directories previously registered as "random music ringtone" directories are not registered as a Document. When it is now the case, a fallback ringtone is now used, and those directories will need to be registered again to comply with new Android security guidelines.</span>
 		</ul>
 	</p>
 
