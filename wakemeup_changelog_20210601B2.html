@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8</span>
+  <title>Wake me up! Smart alarm clock : changelog</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"> 
+  <link href="wakemeup_changelog.css" rel="stylesheet"> 
+</head>
+<body>
+
+	<p>
+		<span class="version major">202106.01 Beta 01</span>
+        <li><new/><span class="standard">[SETTING] It is now possible to define how many minutes are added to a snoozed alarm from the notification, instead of adding one minute at a time.</span>
+        <li><new/><span class="standard">[BACKUP] Improved permission handling while restoring a backup.</span>
+        <li><span class="standard">Bugfixes</span>
+		</ul>
+	</p>
+
+
+	<p>
+		<span class="version major">202106.01 Beta 01</span>
+        <li><new/><span class="major_feature">Android 11 support. Removed support for Android versions below Android 8.1</span>
+        <li><new/><span class="major_feature">Complete overhaul of the Edit Alarm screens. All standard options for an alarm are on the first screen. All other options are sorted on dedicated screens. Advanced options for each sections are stored in subsections, so that all screen are not flooded by options.</span>
+        <li><new/><span class="major_feature">Added the possibility to set as many calendars as necessary for calendar-based features.</span>
+        <li><new/><span class="standard">Reworked the Timers interface.</span>
+        <li><new/><span class="standard">Simplified Settings screens.</span>
+        <li><new/><span class="premium">[WEATHER FORECAST] Migrated Weather forecast retrieval from DarkSky (which won't be available for Android apps soon) to VisualCrossing.</span>
+        <li><new/><span class="premium">[WEATHER FORECAST] Thanks to the migration to VisualCrossing, weather forecast now is extended to 15 days from 7 days.</span>
+        <li><new/><span class="premium">[WEATHER FORECAST] New weather forecast screen.</span>
+        <li><new/><span class="standard">Lock/Unlock for alarms now uses the device lock pattern or biometrics.</span>
+        <li><span class="standard">Removed Fingerprint Challenge as it can't work anymore for  Android 11 devices. A dialog is displayed by the system when the fingerprint scanning workflow starts.
+This dialog box cannot be displayed when the phone is locked, which is nearly always the case when an alarm goes off. Because of this new restriction with Android 11, this feature has to be removed.</span>
+		</ul>
+	</p>
+
+
+	<p>
+		<span class="version major">202012.08</span>
+        <li><fix/><span class="standard">Fixed : alarm ringing forever for a "do not repeat" alarm that is on its last repeat.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">202012.07</span>
+        <li><fix/><span class="standard">Fixed a crash with directories previously registered as "random music ringtone" directories are not registered as a Document. When it is now the case, a fallback ringtone is now used, and those directories will need to be registered again to comply with new Android security guidelines.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">202012.06</span>
+        <li><fix/><span class="premium">Fixed an issue regarding alarms that were scheduled on the same day at their usual time if an exceptional instance was set at a time before the usual time.</span>
+        <li><fix/><span class="standard">Fixed snoozing with volume buttons that could double the time of the snoozing.</span>
+        <li><fix/><span class="standard">Fixed selecting a music directory for random music ringtones that crashed on Android 11.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">202012.05</span>
+        <li><fix/><span class="premium">Fixed an issue regarding alarms that are activated by calendar events and that would not be scheduled if a start date was specifically set and far in the past.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">202012.04</span>
+        <li><fix/><span class="premium">Fixed an issue when snoozing multiple times an alarm with the Tasker plugin.</span>
+        <li><fix/><span class="premium">Fixed snoozing after midnight and then skipping the alarm that would cause it to also skip the next instance if it was on the same day</span>
+        <li><fix/><span class="standard">Fixed the language switcher.</span>
+        <li><fix/><span class="standard">Fixed the dark theme for date selection dialogs.</span>
+        <li><fix/><span class="premium">The address selection for "Geolocation-based deactivation" and "Geolocation-based alarms" is fixed.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">202012.03</span>
+        <li><new/><span class="premium">Added an option to revert to the previous audio engine for MP3 ringtones. With the previous audio engine, changing the ringtone speed is not possible.</span>
+		</ul>
+	</p>
+	<p>
+		<span class="version major">202012.02</span>
+        <li><fix/><span class="standard">Fixed MP3 ringtones with progressive volume, that made no sound when the MP3 took more than 50ms to load.</span>
+        <li><span class="standard">Updated translations.</span>
+		</ul>
+	</p>
+	<p>
+		<span class="version major">202012.01</span>
+        <ul>
+        <li><new/><span class="standard">[RINGTONES] Switched the audio engine to Exoplayer for ringtones using audio files.</span>
+        <li><new/><span class="premium">[RINGTONES] For ringtones using audio files, a new settings permits to change the playing speed of the ringtone, from 5 times slower to 5 times faster.</span>
+        <li><new/><span class="premium">[TASKER] It is now possible to set a variable (%wmualarmname) before using the "Launch alarm" Tasker Plugin, used to trigger Tasker-based alarms, in order to change the alarm name just before triggering the alarm.</span>
+        <li><new/><span class="premium">[TASKER] New plugin that permits to change the time of a Scheduled alarm, using previously set variables: %wmualarmhour (mandatory), %wmualarmminute (mandatory), %wmualarmampm (optionnal).</span>
+        <li><new/><span class="standard">Improved notification refresh when Android submits a calendar modification event to the application.</span>
+        <li><span class="standard">Other small improvements and bugfixes.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">202010.01</span>
+        <ul>
+        <li><new/><span class="premium">All alarms created by the "Create alarm" tasker plugin are now automatically bound to Tasker.</span>
+        <li><new/><span class="premium">The "Delete alarm" tasker plugin now deletes all alarms with the given name, if those alarms are bound to Tasker or the setting to bind all alarms to Tasker is activated.</span>
+        <li><new/<<span class="standard">The per-alarm setting that permits to delete a not-repeating alarm after its last repeat can now also be set for repeating alarms. Those alarms will also be deleted, instead of deactivated, when the stop date is reached.</span>
+        <li><fix/><span class="standard">Fixed Google Drive synchronization.</span>
+        <li><fix/><span class="premium">Fixed Tasker events about activating or deactivating an alarm.</span>
+        <li><fix/><span class="standard">Fixed the alarm card data not being refreshed the first alarm after having updated an alarm.</span>
+        <li><span class="standard">Removed the General Preference "Delete non repeating alarms..." in favor of a setting that can be set on a per-alarm basis.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">202009.01</span>
+        <ul>
+        <li><fix/><span class="standard">Changed the way the application stores its settings so that the settings being reset does not happen again.</span>
+        <li><fix/><span class="standard">Fixed a crash that occured when taping on the notification.</span>
+        <li><span class="standard">Removed the option to select the old application icon.</span>
+        <li><span class="standard">Removed the option to set a secure pin code for alarm locking. The current option is outdated and will be replaced in the future by a better one. In the meantime, pin codes are reset and can be set again.</span>
+		</ul>
+	</p>
+		<p>
+		<span class="version major">15.5</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed a bug that occured when calendar-based alarms where set and the "Read Calendar" permission was permanently denied.</span>
+		</ul>
+	</p>
+	<p>
+		<span class="version major">15.4</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed a bug that made some snooze options not refreshing correctly when changing the "Ring indefinitely" option.</span>
+		</ul>
+	</p>
+	<p>
+		<span class="version major">15.3</span>
+        <ul>
+        <li><fix/><span class="standard">More bugfixes and improvements for backup restoring</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">15.2</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed a crash with Wear OS synchronization.</span>
+        <li><fix/><span class="standard">Fixed a problem when cancelling or saving the modification to the settings of an alarm, after having cancelled the modification of another alarm.</span>
+		</ul>
+	</p>
+	<p>
+		<span class="version major">15.0</span>
+        <ul>
+        <li><new/><span class="major_feature">Added a new check at startup for phones made by manufacturers that do not comply to Android's standards and kill the application regularly. By doing so, the alarms never go off.</span>
+        <li><new/><span class="major_feature">New screen for editing an alarm. It is now easier to read and to find which options are available and can be changed.</span>
+        <li><new/><span class="premium">The "Activate/Deactivate" Tasker plugin now refreshes its alarms when coming back to it.</span>
+        <li><new/><span class="premium">The "Activate/Deactivate" Tasker plugin now sorts its alarms by name.</span>
+        <li><new/><span class="premium">The "Activate/Deactivate" Tasker plugin now permits to select multiple alarms.</span>
+        <li><new/><span class="premium">The "Create Alarm" Tasker plugin now permits to create an alarm that will go off X minutes after the event that triggered the plugin occurred in Tasker. To do so, no <i>%wmualarmhour</i> variable should be set. The <i>%wmualarmminute</i> is sufficient.</span>
+		<li><new/><span class="premium">Tasker/Stopwatch : A new Tasker plugin permits to start, stop or reset the stopwatch as well as start a new lap following Tasker events.</span>
+        <li><new/><span class="free">Improved the local backup/restore feature.</span>
+		<li><fix/><span class="standard">Bugfixes and performance improvements.</span>
+        <li><new/><span class="free">Added an option in the Preferences/Other to change the language displayed in the application.</span>
+        <li><new/><span class="free">Added an option to not show again the warning about battery optimization.</span>
+		<li><new/><span class="premium">"Start scheduling on" is now set to the first date the alarm is saved. For already existing alarms, the alarm needs to be saved again for this to take effet.</span>
+		<li><span class="standard">Stopwatch improvements.</span>
+		<li><span class="standard">Android 5.0 and 5.1 are no longer supported.</span>
+		<li><span class="standard">Removed all translations that are less than 50% complete.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">14.0</span>
+        <ul>
+        <li><new/><span class="premium">Activation calendars: It is now possible to set an Activation Calendar for an alarm of the following types: Scheduled set as repeating, Calendar-based, High Frequency. By doing so, alarm will go off only on days having an all-day event set on the Activation Calendar. Those events can be filtered with specific tags. To prevent infinite search on calendars without any all-day events, only days up to 30 days into the future will be taken into account. But, on each event added, deleted or modified on a calendar, the alarm will automatically schedule itself again.</span>
+        <li><new/><span class="premium">The "Snooze/Dismiss" Tasker plugin now refreshes its alarms when coming back to it.</span>
+        <li><new/><span class="premium">The "Snooze/Dismiss" Tasker plugin now sorts its alarms by type name.</span>
+        <li><new/><span class="premium">The "Snooze/Dismiss" Tasker plugin now permits to select multiple alarms.</span>
+        <li><new/><span class="free">Added an indication that alarms are loading on the screen displaying the list of alarms.</span>
+		<li><fix/><span class="standard">Bugfixes.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">13.3</span>
+        <ul>
+        <li><fix/><span class="standard">The "Tap anywhere to snooze" checkbox was not properly checked when editing an alarm.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">13.2</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed duplicated calendar events when switching back to them after dismissing an alarm.</span>
+        <li><fix/><span class="standard">Fixed French Quote of the day.</span>
+        <li><fix/><span class="standard">Added a scrollbar for really long quotes of the day.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">13.1</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed the selection of a ringtone type.</span>
+        <li><span class="standard">Updated translations</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">13.0</span>
+        <ul>
+        <li><new/><span class="free">Added the possibility to snooze an alarm by tapping anywhere on the screen, except the buttons.</span>
+        <li><fix/><span class="standard">Fixed curved layout on Android 9+.</span>
+        <li><fix/><span class="standard">Fixed an issue when setting a text for the Text Challenge.</span>
+		<li><fix/><span class="standard">Other bugfixes.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">12.8</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed a Calendar-based alarm scheduling itself again when skipped if no future event would schedule it at another time.</span>
+        <li><fix/><span class="standard">Fixed a few other non critical bugs.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">12.7</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed Vibrations checkbox.</span>
+        <li><fix/><span class="standard">Fixed a few other non critical bugs.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">12.6</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed a problem while displaying data on the weather chart.</span>
+        <li><fix/><span class="standard">Fixed a few other non critical bugs.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">12.5</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed the alarm screen layout select dialog.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">12.4</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed a problem with security pin code. It may be needed to clear the pin code.</span>
+        <li><fix/><span class="standard">Fixed some crashes.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">12.3</span>
+        <ul>
+        <li><fix/><span class="standard">Fixed a problem that prevented one alarm to be set as automatically deactivated by a calendar.</span>
+        <li><fix/><span class="standard">Prevent a crash when an alarm makes more than 10 seconds to go off, when the device is running slow.</span>
+        <li><fix/><span class="standard">Prevent a crash with blurring on Android 10. On Android 10, blurring may not work. I'm working on this.</span>
+        <li><span class="standard">Updated translations.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">12.2</span>
+        <ul>
+        <li><new/><span class="premium">Tasker events can now be linked to Calendar-based and High-Frequency alarms.</span>
+        <li><span class="standard">Updated translations.</span>
+        <li><span class="standard">Bugfixes.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">12.1</span>
+        <ul>
+        <li><fix/><span class="free">Fixed crashes when changing movement detection threshold in the new settings.</span>
+        <li><fix/><span class="free">Fixed creating an alarm with Google Asssistant.</span>
+        <li><fix/><span class="free">Fixed text challenge on Android 9+.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">12.0</span>
+        <ul>
+        <li><new/><span class="free">Improved dark mode management.</span>
+        <li><new/><span class="free">New improved settings.</span>
+        <li><new/><span class="premium">Setting a place to activate automatically an alarm, or a calendar to automatically deactivate an alarm, can now be set as default settings, so that each new alarm has those settings by default.</span>
+        <li><new/><span class="free">For Android 8+, it is now possible to choose a ringtone for the Wake up notification from either the alarm ringtones list or the media ringtones list.</span>
+		<li><span class="standard">Bugfixes</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">11.5</span>
+        <ul>
+        <li><new/><span class="free">Improved alarm sorting.</span>
+		<li><span class="standard">Bugfixes.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">11.4</span>
+        <ul>
+        <li><new/><span class="major_feature">Updated authentication to Google services when using Google Drive backup and/or Google Photos services. <b>The application will ask again for authentication.</b></span>
+		<li><span class="standard">Bugfixes.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">11.2</span>
+        <ul>
+        <li><new/><span class="premium">New Tasker event: An event has been added that is triggered when, for a schedule-based alarm, the initially scheduled time has been changed.</span>
+		<li><span class="standard">Bugfixes.</span>
+		</ul>
+	</p>
+
+	<p>
+		<span class="version major">11.0</span>
+        <ul>
+        <li><new/><span class="major_feature">Android Q support</span>
+		<li><new/><span class="major_feature">New and easier to use screen for setting up an alarm.</span>
+        <li><new/><span class="standard">Setting a stop date for repeating alarms is now a free feature.</span>
+        <li><new/><span class="premium">Google Photos background: Select a Google Photos album and your alarm will display one randomly chosen picture everytime it will go off. This feature may need another Google login.</span>
+        <li><new/><span class="premium">It is now possible to set a Calendar-based alarm to ignore events that start between two different times.</span>
+        <li><fix/><span class="free">The Missed/Snooze settings did not appear when changing default settings for Quick Naps.</span>
+        <li><fix/><span class="free">Restoring alarms that has a Stop Date.</span>
+        <li><fix/><span class="premium">Fixed calendar events not being displayed in the correct order.</span>
+        <li><new/><span class="standard">New icon to conform to new Google's guideline.</span>
+        <li><span class="standard">Other bugfixes.</span>
+		</ul>
+	</p>
+	
+	
+	<p>
+		<span class="version major">10.0</span>
+        <ul>
+        <li><new/><span class="premium">"Exceptional instances" replaces "Exceptional times". It is now possible to set an exceptional date and time for a Time scheduled alarm, on any date.)</span>
+        <li><fix/><span class="free">It is now possible, per alarm, to force the fullscreen alarm to be displayed, or to block the fullscreen alarm to be ever displayed.</span>
+        <li><span class="standard">Other bugfixes.</span>
+		</ul>
+	</p><p>
+		<span class="version minor">10.0.5</span>
+        <ul>
+        <li><fix/><span class="premium">Calendar-based alarm would not scheduled themselves correctly when used with the "only first event" option.</span>
+        <li><fix/><span class="premium">Tasker alarms where being disabled frequently for premium users that never had ads. Enabling the alarms once more is needed.</span>
+        <li><fix/><span class="premium">Tags where not being handled correctly when filtering events for calencar-based alarm.</span>
+		</ul>
+
+	</p>
+
+    <p><span class="version major">9.0</span>
+        <ul>
+        <li><new/><span class="major_feature">All premium features can now be used by activating ads, except for the weather forecast. Ads are displayed in the application as well as when an alarm goes off.</span>
+        <li><new/><span class="free">It is now possible to change the values used to detect phone movements, to adapt it to each phone.</span>
+        <li><new/><span class="free">All Night mode options are now free for all! Happy new year!</span>
+        <li><new/><span class="free">All layouts for the list of alarms are now free for all! Happy new year!</span>
+        <li><new/><span class="premium"><span class="category">Localised Deactivation</span> Alarm activation/deactivation based on localisation.</span>
+        <li><new/><span class="premium"><span class="category">TTS</span> Only talks about the next event (all-day events excluded) to occur on the next.</span>
+        <li><new/><span class="premium"><span class="category">Calendar-Based Alarms</span> Filter events taken into account with tags.</span>
+        <li><new/><span class="premium"><span class="category">TTS</span> Text-to-speech only talks about the next events to occur on the day, not those already past.</span>
+        <li><new/><span class="free">Adapted the user interface to match the Material design specifications.</span>
+        <li><span class="standard">Better help</span>
+        <li><span class="standard">Bugfixes, memory improvements.</span>
+    </ul></p>
+
+    <p><span class="version major">8.5</span>
+		<ul>
+        <li><fix/><span class="free">Each alarm can now have a different layout or customize the actions on the buttons, if a layout with buttons is selected.</span>
+        <li><fix/><span class="free">Progressive brightness can now be customized independently from the progressive ringtone.</span>
+        <li><fix/><span class="free">The Date Widget can now display the time, if necessary.</span>
+        <li><new/><span class="premium">Fingerprint challenge. Scan your fingerprint to be able to snooze or dismiss an alarm. Available only for Android 6 and later.</span>
+        <li><new/><span class="premium">Set a date to start scheduling for standard alarms, high frequency alarms and calendar-based alarms.</span>
+        <li><new/><span class="premium">Use all calendars from an account instead of only one calendar by selecting the account to synchronize your calendars or disable your calendars for a period or a day.</span>
+        <li><new/><span class="premium">New chart for weather forecast.</span>
+        <li><span class="standard">Bugfixes and memory improvements.</span>
+    </ul></p>
+
+    <p><span class="version major">8.0</span><ul>
+        <li><new/><span class="major_feature">Android Pie support</span>
+        <li><new/><span class="standard">Wear OS connectivity is now free!</span>
+        <li><new/><span class="standard">New menu to select all options on the main screen, inline with the new Google Material Design 2 specifications.</span>
+        <li><new/><span class="free"><span class="category">Alarm layout</span> A new alarm layout, based on a smaller display of a picture, is available.</span>
+        <li><new/><span class="free"><span class="category">Stopwatch</span> A stopwatch has been added to Wake me up.</span>
+        <li><new/><span class="free"><span class="category">Gradient background</span> You can now select an animated gradient background to make your alarms even more beautiful!</span>
+        <li><new/><span class="free"><span class="category">Wake up Alarm</span> You can specify an alarm to be an alarm that you use to wake up. Then, Wake me up! will display a notification to tell you that it's time to go to bed</span>
+        <li><new/><span class="free"><span class="category">Notification</span> It is now possible to snooze an alarm that will ring in less than two hours before it goes off directly from the notification.</span>
+        <li><new/><span class="free"><span class="category">Movements</span> Actions when the phone is lifted can now be set per alarm, instead of for the whole application.</span>
+        <li><new/><span class="free"><span class="category">Volume buttons</span> Dismiss and snooze actions can now be set, per alarms, for volume buttons.</span>
+        <li><new/><span class="free"><span class="category">Do Not Disturb</span> A message is now displayed inside the application when the Do Not Disturb settings currently in use will prevent alarms to ring.</span>
+        <li><new/><span class="free"><span class="category">Wear OS</span> It is now possible to snooze the next alarm set to go off from the Wear OS companion app</span>
+        <li><new/><span class="free"><span class="category">Wear OS</span> It is now possible to dismiss the next alarm set to go off from the Wear OS companion app</span>
+        <li><new/><span class="free"><span class="category">Wear OS</span> Ambient mode is supported</span>
+        <li><new/><span class="premium"><span class="category">Geolocation-based type of alarm</span> This type of alarm is bound to a place, within a 30 meters radius. It will go off when the user reaches this place.</span>
+        <li><new/><span class="premium"><span class="category">High frequency alarm</span> This type of alarm will ring at a specified frequency, for example every two minutes or every two hours.</span>
+        <li><new/><span class="premium"><span class="category">Tasker Event</span> New Tasker events are sent when the night mode is launched and when the night mode is stopped.</span>
+        <li><new/><span class="premium"><span class="category">Tasker Plugin</span> New Tasker plugin that permits to snooze the next alarm that will go off, or the next instance of a specific alarm.</span>
+        <li><new/><span class="premium"><span class="category">Calendar-Based Alarms</span> Now, calendar-based alarms also take into account disabling calendars, with or without a tag set.</span>
+    </ul></p>
+
+    <p><span class="version minor">8.0.1</span><ul>
+        <li><fix/><span class="free">A message that appeared indefinitely when only one calendar-based alarm was enabled and no event was retrieved</span>
+        <li><fix/><span class="premium">Backup for NFC tags</span>
+    </ul></p>
+
+    <p><span class="version minor">8.0.2</span><ul>
+        <li><fix/><span class="free">Restoring a backup with an High Frequency alarm</span>
+        <li><fix/><span class="free">The main menu did not scroll in landscape mode</span>
+        <li><fix/><span class="free">TTS Then ringtone would not play the ringtone with long TTS messages</span>
+    </ul></p>
+
+    <p><span class="version major">7.0</span><ul>
+        <li><new/><span class="standard">Revamped the application. With the new UI, all options are meant to be more easily discoverable.</span>
+        <li><new/><span class="free">Specify a different ringtone for the "Gentle wake up" feature.</span>
+        <li><new/><span class="free">Disable the haptic feedback when choosing a time or a date (available in the General Preferences -> Other)</span>
+        <li><new/><span class="free">The automatic switch between the Dark mode and the Light mode is now based on the sunrise and sunset times.</span>
+        <li><new/><span class="free">It is now possible to set up to 18 quick naps durations, instead of 6.</span>
+        <li><new/><span class="free">The Compact layout for the list of alarms is now free for all.</span>
+        <li><new/><span class="free">For the users who really dislike to new application icon, it is now possible to switch to the old one.</span>
+        <li><new/><span class="free">New About screen.</span>
+        <li><new/><span class="premium"><span class="category">Calendar-Based Alarms</span> Ignore an event that starts before the end of the previous event.</span>
+        <li><new/><span class="premium"><span class="category">Calendar-Based Alarms</span> Set an alarm to ring only for the first event of the day.</span>
+        <li><new/><span class="premium"><span class="category">Weather Forecast</span> New animated weather icons, heavily inspired by amcharts. Thanks to them!</span>
+        <li><new/><span class="premium"><span class="category">Tasker</span> Specific default settings can now be set for alarms created by the Tasker plugin</span>
+        <li><span class="standard">Performances, battery usage and stability improvements.</span>
+        <li><span class="standard">Smaller APK.</span>
+    </ul></p>
+
+    <p><span class="version minor">7.0.7</span><ul>
+        <li><fix/><span class="premium"><span class="category">Tasker</span> The Populate variable plugin now has a new variable for the next alarm name.</span>
+        <li><fix/><span class="premium"><span class="category">Weather Forecast</span> A problem when searching for a city.</span>
+        <li><fix/><span class="premium"><span class="category">Tasker</span> A problem with tasker plugins when binding all alarms to Tasker.</span>
+        <li><fix/><span class="premium"><span class="category">Tasker</span> A problem when only a Tasker alarm was enabled.</span>
+        <li><fix/><span class="premium"><span class="category">Tasker</span> A crash with the Tasker "Delete alarm" plugin.</span>
+        <li><fix/><span class="standard">Some rare crashes.</span>
+    </ul></p>
+	
+    <p><span class="version major">6.5</span><ul>
+        <li><new/><span class="premium">Improved the visibility for the main options when editing an alarm</span>
+        <li><fix/><span class="premium">A bug when skipping an alarm that was linked to a recurring event</span>
+        <li><fix/><span class="free">TTS ringtones not stopping after dismissing an alarm</span>
+        <li><span class="standard">Improved overall performances</span>
+        <li><span class="standard">Updated translations</span>
+    </ul></p>
+
+    <p><span class="version minor">6.5.1</span><ul>
+        <li><fix/><span class="free">A crash in the Volume settings with the Italian language</span>
+        <li><fix/><span class="free">The Alarm icon in the status bar did not disappear after disabling all alarms</span>
+        <li><span class="standard">Updated translations</span>
+    </ul></p>
+
+	
+    <p><span class="version major">6.0</span><ul>
+        <li><new/><span class="premium"><span class="category">Calendar-Based Alarms</span> Schedule your alarm with Google Calendar! Your alarm will be totally synchronized with one of your calendars! It will ring for each event (apart from all-day events) on your calendar. (Premium)</span>
+        <li><new/><span class="premium"><span class="category">Weather Forecast</span> Brand new Weather forecast activity available from the alarm cards.(Premium)</span>
+        <li><new/><span class="standard">Brand new colorful Alarm list layout.(Premium)</span>
+        <li><new/><span class="free">New ringtone type : TTS once, then repeating Music file.</span>
+        <li><new/><span class="free">Snooze improvement: Add one more minute before your alarm goes off again, directly from the notification.</span>
+        <li><new/><span class="free">The option to dismiss or snooze an alarm with a long press on a bigger button can now be set for either the dismiss button or the snooze button, instead of only both button.</span>
+        <li><new/><span class="free">Blur the background pictures when using the new colorful layout.(Premium)</span>
+        <li><new/><span class="premium">New TASKER plugin : skip the next alarm or a specific alarm after a Tasker event.(Premium)</span>
+        <li><new/><span class="standard">Locking an alarm is now available for all!</span>
+        <li><new/><span class="standard">Cloning an alarm is now available for all!</span>
+        <li><new/><span class="free">The action set for the Home key can now be changed.</span>
+        <li><span class="standard">UI improvements.</span>
+        <li><span class="standard">Great memory usage and performance improvements.</span>
+        <li><span class="standard">Built with Android 8.1 SDK</span>
+        <li><span class="standard">Updated translations.</span>
+        <li><span class="standard">Dropped support for Android 4.3</span>
+    </ul></p>
+
+    <p><span class="version major">5.0</span><ul>
+        <li><new/><span class="standard">Android 8 compatibility.</span>
+        <li><new/><span class="premium"><span class="category">Calendar Prioritization</span> An alarm can ring a certain time before the first event when it happens sooner than the usual alarm time. (Premium)</span>
+        <li><new/><span class="standard">Adaptive icons support (Android 8+).</span>
+        <li><new/><span class="standard">Notification channels (Android 8+).</span>
+        <li><new/><span class="free">Delete a non-repeating alarm instead of disabling it, per alarm. The setting to automatically delete a non-repeating alarm instead of disabling it can now be set per alarm.</span>
+        <li><new/><span class="premium">It is now possible to forbid skipping an alarm for every locked alarm.</span>
+        <li><new/><span class="premium">It is now possible to manually synchronize Android Wear devices in case the connection has been lost.</span>
+        <li><new/><span class="free">Quick naps are now available as an application shortcut, directly from the launcher.</span>
+        <li><new/><span class="free">Quick naps have their own default settings.</span>
+        <li><new/><span class="premium"><span class="category">Tasker</span> New plugin that permits to delete an alarm after a Tasker event. (Premium)</span>
+        <li><new/><span class="premium"><span class="category">Tasker</span> The "Create alarm" plugin has been rewritten from scratch. It now takes variables for hour, minutes, ampm and label. Other parameters are taken from the default settings.</span>
+        <li><new/><span class="premium"><span class="category">Tasker</span> Snooze/dismiss and enable/disable plugins can now be used for all alarms. To do so, a new setting in the Preferences, that will automatically bind all alarms to Tasker, needs to be enabled.</span>
+        <li><new/><span class="standard">Alarms and timers will ring and be shown in fullscreen even if notifications are blocked.</span>
+        <li><new/><span class="free">"Gentle wake up" can now be set from 1 minute up to 60 minutes, instead of 5 minutes to 30 minutes previously.</span>
+        <li><new/><span class="free">Progressive brightness can now be set independently to progressive ringtone. It's length remains the same as the one set for progressive ringtone.</span>
+        <li><new/><span class="free">The notification warning about an alarm being silent won't reappear anymore after being dismissed.</span>
+        <li><new/><span class="premium">When weather forecast is set, the accuracy can be switched between high and low when using GPS position. The application may ask for Location permission again. (Premium)</span>
+        <li><new/><span class="free">Settings are better organized</span>
+        <li><new/><span class="free">Less battery and memory usage when paired to Android Wear (Premium)</span>
+        <li><new/><span class="free">Quick naps cannot be disabled anymore.</span>
+        <li><new/><span class="standard">The usual various bugfixes here and there...</span>
+    </ul></p>
+
+    <p><span class="version minor">5.0.5</span><ul>
+        <li><fix/><span class="free">Text-To-Speech volume for information.</span>
+        <li><fix/><span class="free">Curved layout.</span>
+        <li><fix/><span class="free">A problem with multiple timer being stopped at the same time.</span>
+        <li><fix/><span class="premium"><span class="category">Tasker</span>A problem with the snooze/dismiss Tasker plugin.</span>
+        <li><fix/><span class="free">A crash with Android 4.3.</span>
+        <li><fix/><span class="free">A crash when the night mode was stopped because an alarm went off.</span>
+        <li><fix/><span class="premium">New German Translation thanks to Patrick Keymer.</span>
+    </ul></p>
+
+    <p><span class="version major">4.9</span><ul>
+        <li><new/><span class="free">DirectBoot support (Android 7+). Alarms will ring even if the phone has rebooted and has not been unlocked.</span>
+        <li><new/><span class="free">Added the possibility to automatically launch the night mode after dismissing or snoozing an alarm.</span>
+        <li><new/><span class="free">New alarm layout: Curved. It mixes background picture and background color. Only for portrait orientation.</span>
+        <li><new/><span class="free">Added a new dialog box to select the layout used for the alarm.</span>
+        <li><new/><span class="free">The Date widget now displays better when scaled on one line.</span>
+    </ul></p>
+
+    <p><span class="version minor">4.9.4</span><ul>
+        <li><new/><span class="major_feature">Important notice: I've received an email from Google threatening to remove the application from the PlayStore because of the Device Administrator permission used to switch off automatically the screen after snoozing or dismissing an alarm. Therefore, before I find another way to do this, I'm removing the feature. Thank you for understanding.</span>
+        <li><fix/><span class="premium">A Tasker alarm being fired even when disabled.</span>
+        <li><fix/><span class="premium">A race condition that could lead to a crash.</span>
+        <li><span class="free">Stability improvements.</span>
+        <li><span class="free">Updated Spanish translation thanks to Mr Diaz.</span>
+    </ul></p>
+
+    <p><span class="version major">4.8.0</span><ul>
+        <li><new/><span class="free">Added an option to display the time until the next alarm above the list of alarms.</span>
+        <li><new/><span class="free">Added the possibility to select a transparent color for an alarm when there is a background picture.</span>
+        <li><fix/><span class="free">Silent "gentle wake up" was not saved as a default setting.</span>
+        <li><fix/><span class="free">A few bugs and crashes that occur rarely.</span>
+        <li><fix/><span class="standard">Updated PlayServices requirement to 10.2.</span>
+    </ul></p>
+
+    <p><span class="version minor">4.8.1</span><ul>
+        <li><fix/><span class="free">A crash for new installs.</span>
+        <li><fix/><span class="free">A security exception related to audio files and Android 7 permissions.</span>
+        <li><fix/><span class="free">A crash when permissions where granted and then removed.</span>
+        <li><fix/><span class="free">A crash that occurs sometimes when selecting a mp3 as a ringtone.</span>
+    </ul></p>
+	
+    <p><span class="version major">4.7</span><ul>
+        <li><new/><span class="premium"><span class="category">New layouts</span> You can now choose between multiple ways to display your list of alarms. Two layouts are for premium users.</span>
+        <li><new/><span class="premium"><span class="category">Silent gentle wake up</span> "Gentle wake up" can now be set to be silent. Doing so, it will not ring until the usual time set for the alarm. Instead, only the brightness will rise slowly.</span>
+        <li><new/><span class="premium">Long click on big buttons. It is now possible to enforce snoozing or dismissing an alarm after a long click, when big buttons are displayed.</span>
+        <li><new/><span class="premium">The application is compatible with Android Wear 2.0, but it's not a standalone application.</span>
+        <li><new/><span class="premium">The "repeat" icon on alarm cards now displays a badge when the alarm is set to repeat every two weeks or more.</span>
+        <li><new/><span class="premium">The navigation when editing an alarm has been improved.</span>
+        <li><fix/><span class="premium">Multiple crashes have been fixes.</span>
+    </ul></p>
+
+    <p><span class="version minor">4.7.1</span><ul>
+        <li><fix/><span class="premium">Fixed a crash that occurred sometimes when updating weather forecast.</span>
+        <li><fix/><span class="free">The button used to expand cards could be hidden behind the "New alarm" button.</span>
+        <li><fix/><span class="free">sometimes, a "gentle wake up" alarm could be scheduled again at its usual time after being dismissed.</span>
+        <li><fix/><span class="free">An alarm could be scheduled again if it was dismissed a few minutes before being fired and the device was rebooted.</span>
+        <li><fix/><span class="free">A crash could occur with the Date widget when retrieving calendar events.</span>
+        <li><fix/><span class="free">A crash that occured when enabling an alarm that would be automatically disabled afterwards.</span>
+        <li><fix/><span class="free">A crash with the prompt that shows the "create alarm" button.</span>
+        <li><span class="standard">Added a notice about the risk of burn screen when using another color than black as a background for the Night mode.</span>
+    </ul></p>
+
+    <p><span class="version major">4.6</span><ul>
+        <li><new/><span class="major_feature">DEMO mode. All premium features can be tested freely for 14 days.</span>
+        <li><new/><span class="free">New Widget. A new widget à la Pixel Launcher, available for all. Premium users can also display on it weather forecast and calendar events.</span>
+        <li><new/><span class="free">Define default settings that will be automatically applied to each new alarm you create.</span>
+        <li><new/><span class="free">Customize your quick naps. You can set up to 6 different durations for your quick naps.</span>
+        <li><new/><span class="premium">Tasker variables are now populated and can be used in Tasker. You just need to use the "Populate variables" task.</span>
+        <li><new/><span class="free">Improvements to landscape display.</span>
+        <li><new/><span class="free">New icon for "do not repeat"/"repeat" alarms.</span>
+        <li><new/><span class="free">The message displayed to undo the deletion of an alarm can be swiped to dismiss it.</span>
+        <li><new/><span class="free">Improvements related to the user interface.</span>
+    </ul></p>
+
+    <p><span class="version major">4.5</span><ul>
+        <li><new/><span class="major_feature">Support Android Nougat 7.1</span>
+        <li><new/><span class="free">It is now possible to set the application to turn off the screen after a fullscreen alarm has been snoozed or dismissed. It needs to be enabled in the Preferences -> Display, and the application needs to be set as Device Administrator.</span>
+        <li><new/><span class="premium">Create alarms that will be triggered only by Tasker. Those alarms are not time-based but can still be snoozed and dismissed.</span>
+        <li><new/><span class="free">Quote of the day. Read a quote, taken from the Wikiquote "quote of the day". Currently supports French, English, Spanish, Italian.</span>
+        <li><new/><span class="premium">The "Next alarm" Widget now also shows the weather background, if the alarm is set up to show one</span>
+        <li><new/><span class="free">Each alarm can be now set up to automatically close on dismiss, or not</span>
+        <li><new/><span class="premium">Snoozing an alarm does not display weather or calendar information anymore</span>
+        <li><new/><span class="free">The duration for Gentle Wake Up can now be set up for each alarm independently</span>
+        <li><new/><span class="free">Not closing automatically an alarm now is only available for alarms that displays information after being dismissed</span>
+        <li><new/><span class="premium">Weather forecast precision on the alarm cards</span>
+        <li><new/><span class="premium">Weather background now shows when editing an alarm if the option is selected</span>
+        <li><fix/><span class="premium">Weather background refresh on alarm cards</span>
+        <li><fix/><span class="free">Checkboxes (and other widgets) colors when disabled on Android 5 and over</span>
+        <li><fix/><span class="free">Some widgets were not properly locked with a locked alarm</span>
+        <li><fix/><span class="free">"New alarm" icon color on Android 4.3 and 4.4</span>
+        <li><fix/><span class="premium">Missed event not being processed by the Tasker event plugin</span>
+        <li><fix/><span class="premium">Sometimes, the "Skip next" button did not appear on a card</span>
+        <li><fix/><span class="premium">Restoring exception times</span>
+        <li><fix/><span class="premium">Cancelling the deletion of an alarm did not cancel the deletion of disable periods, exception times and manually skipped dates</span>
+    </ul></p>
+
+    <p><span class="version minor">4.5.10</span><ul>
+        <li><fix/><span class="free">Fix a crash with badly initialized Samsung TTS.</span>
+        <li><fix/><span class="free">French "Quote of the day" extraction.</span>
+        <li><fix/><span class="free">Permission management when restoring a backup.</span>
+        <li><fix/><span class="free">Displaying the "Quote of the day" when also displaying calendar events, but not weather forecast.</span>
+        <li><fix/><span class="free">A crash while restoring, in some cases.</span>
+        <li><fix/><span class="free">A crash with the timers.</span>
+        <li><fix/><span class="free">A crash when testing TTS ringtones without setting a message.</span>
+        <li><fix/><span class="free">A crash when switching too fast between alarm edition screens.</span>
+        <li><fix/><span class="free">A crash when skipping the last instance of an alarm, with the option to delete automatically an alarm that won't ring again instead of disabling it.</span>
+        <li><fix/><span class="free">A crash with the "Next alarm" widget when displaying an alarm that will ring in more than 7 days, with a weather background.</span>
+        <li><fix/><span class="premium">Weather forecast icon displayed in the widget.</span>
+        <li><fix/><span class="free">Changing the TTS message used as a ringtone would not display the "SAVE" button.</span>
+        <li><fix/><span class="premium">Changing the "Every X week" value would not display the "SAVE" button.</span>
+        <li><fix/><span class="free">A crash when displaying the Quote of the day without Internet connectivity.</span>
+        <li><fix/><span class="free">DirectBoot has been temporarily disabled as it does not work well. But it will come back!</span>
+        <li><fix/><span class="free">A display problem after saving an alarm on Android 5+</span>
+        <li><fix/><span class="free">Greatly improved performances when displaying the alarm list, when skipping alarms or when going back</span>
+        <li><fix/><span class="premium">Planning for "every X weeks" on some cases</span>
+        <li><fix/><span class="free">The schedule displayed on each card with a repeating alarm now respects the first day of the week for the order on which days are displayed.</span>
+        <li><fix/><span class="free">Disabled alarm text color when using a black theme</span>
+        <li><fix/><span class="free">A crash when the "cancel alarm edition" dialog was displayed and the orientation of the device was changed</span>
+        <li><fix/><span class="premium">A crash on the Tasker plugin used to create a new alarm after an event</span>
+        <li><fix/><span class="premium">Enable/disable alarm tasker plugin</span>
+    </ul></p>
+
+    <p><span class="version major">4.1</span><ul>
+        <li><new/><span class="premium">Calendar events can be added to the text-to-speech message.</span>
+        <li><new/><span class="free">Night mode: A timer can now be set on the "Night mode" to close it automatically.</span>
+        <li><new/><span class="free">Widget: The "Upcoming alarm" widget can now be configured for its transparency and its texts color.</span>
+        <li><new/><span class="premium">Weather: Weather charts can now have a minimum and maximum temperature to use if necessary.</span>
+        <li><new/><span class="free">It is now possible to have the background picture also displayed on the alarm information screen, blurred for readability</span>
+        <li><new/><span class="free">Texts and icons on the header of the alarm edit screen now match the alarm text color</span>
+        <li><new/><span class="free">Status bar color on the alarm edit screen, with a white theme selected and no background picture (needs Android 6 or newer)</span>
+        <li><fix/><span class="free">The text color for the Exit button on Android 4.4 and lower</span>
+        <li><fix/><span class="free">Added a workaround to fix an Android bug on Android 4.4 and lower that would change preferences without an input from the user.</span>
+        <li><fix/><span class="free">Changing settings on Android Nougat could not work on some cases</span>
+        <li><fix/><span class="free">Updated Italian translation thanks to Marco Russo.</span>
+    </ul></p>
+
+    <p><span class="version minor">4.1.1</span><ul>
+        <li><fix/><span class="free">A rare crash that could occur when saving an alarm after having selected a picture.</span>
+    </ul></p>
+
+
+    <p><span class="version major">4.0</span><ul>
+        <li><new/><span class="free">Added compatibility with the new Launcher Shortcuts.</span>
+        <li><new/><span class="premium">Calendar: Display events of the day on your alarm screen.</span>
+        <li><new/><span class="premium">Calendar: Limit all-day events that disables an alarm to those with a specific tag.</span>
+        <li><new/><span class="premium">Android Wear: New layout type: Slide instead of tap (needs to be selected in the preferences).</span>
+        <li><new/><span class="premium">Android Wear: Devices can now play a default ringtone.</span>
+        <li><new/><span class="premium">Android Wear: Progressive ringtones are supported!</span>
+        <li><new/><span class="premium">Android Wear: Limit vibrations to the Wear device!</span>
+        <li><new/><span class="premium">Weather: Alarm screen now shows the temperature variation during the next 24 hours.</span>
+        <li><new/><span class="free">Movements: Movements can be setup for each alarm to either dismiss or snooze it.</span>
+        <li><new/><span class="free">Movements: Shaking the phone is now a supported movement (with flipping the phone and waving the hand 3 times over the phone).</span>
+        <li><new/><span class="free">New improved Ringtone picker : Timer's ringtone may need to be set again.</span>
+        <li><new/><span class="free">If flipping the phone is set to "snooze", and manual snoozing is limited, it is possible to dismiss the alarm by flipping the phone.</span>
+        <li><new/><span class="free">If volume buttons are set to dismiss or snooze an alarm, it is now also possible with the volume buttons of an headset.</span>
+        <li><new/><span class="free">The application now warns if the "do not disturb" setting also disables alarms. For security reasons related to Android, it does not work with "customized do not disturb" settings.</span>
+        <li><new/><span class="premium">Android Wear: Forbidding snoozing is also propagated to Wear devices.</span>
+        <li><new/><span class="free">Google Drive Sync: Improved bandwith usage when doing backups of alarms with pictures.</span>
+        <li><new/><span class="free">Progressive ringtone can now go from 1 second up to 60 minutes</span>
+        <li><new/><span class="free">Added new Pastel colors as possible skins</span>
+        <li><new/><span class="free">PIN code input</span>
+        <li><new/><span class="premium">Weather icons on the phone are now animated</span>
+        <li><new/><span class="free">Notifications are prettier with the Wake me up! style.</span>
+        <li><new/><span class="free">Notifications are grouped on Android Nougat with the Android style.</span>
+        <li><new/><span class="free">Lifting the phone (to mute or lower the volume of a ringtone) is now less sensitive.</span>
+        <li><fix/><span class="free">Widget not showing Next and Previous buttons for a white alarm</span>
+        <li><fix/><span class="free">Widget not being refreshed after deleting an alarm</span>
+        <li><fix/><span class="free">Alarm dismissed before their time being shown again if the device was rebooted before the alarm time</span>
+        <li><fix/><span class="free">Night mode does not stop automatically anymore if the device is plugged in but the battery level is below the defined threshold.</span>
+        <li><span class="standard">Better performances and stability</span>
+        <li><span class="standard">Smaller APK</span>
+    </ul></p>
+
+    <p><span class="version minor">4.0.3</span><ul>
+        <li><fix/><span class="free">Ringtone picker is now back to its older self</span>
+        <li><fix/><span class="free">Progressive ringtone longer than 30 seconds</span>
+    </ul></p>
+    <p><span class="version major">3.7</span><ul>
+        <li><new/><span class="free">Possibility to not hide the alarm screen automatically. (disabled by default)</span>
+        <li><new/><span class="premium">Made new weather-related background, material design oriented.</span>
+        <li><new/><span class="premium">Weather display on the alarm screen.</span>
+        <li><new/><span class="free">Display of really big pictures as alarm background.</span>
+        <li><fixnewspan class="free">Display a warning message when leaving the application without saving changes made to an alarm.</span>
+        <li><fix/><span class="premium">FIXED: Manually skipped alarms being reverted back when updating the app.</span>
+        <li><fix/><span class="premium">FIXED: Some elements not being locked with a locked alarm.</span>
+    </ul></p>
+
+    <p><span class="version major">3.7.2</span><ul>
+        <li><fix/><span class="free">The save button did not appear sometimes.</span>
+        <li><fix/><span class="free">The color palette not being sometimes properly displayed.</span>
+        <li><fix/><span class="premium">Sometimes, the "previous" button did not work on notifications.</span>
+        <li><fix/><span class="free">Dismissing a repeating alarm 30 mins before its time could disable it.</span>
+    </ul></p>
+
+
+    <p><span class="version major">3.6</span><ul>
+        <li><new/><span class="free">FEATURE: Added the possibility to permit snoozing only for a number of times.</span>
+        <li><fix/><span class="free">Snoozing an alarm may skip the next one.</span>
+        <li><fix/><span class="free">Snooze length displayed after snoozing an alarm that had "gentle wake up" enabled.</span>
+        <li><fix/><span class="premium">Decreasing snooze length being displayed although the option was not selected.</span>
+    </ul></p>
+
+    <p><span class="version major">3.5</span><ul>
+        <li><span class="standard">Android Nougat compatibility!</span>
+        <li><new/><span class="free">Android Nougat: Added DirectBoot compatibility.</span>
+        <li><new/><span class="free">Android Nougat: Added Multiwindow compatibility.</span>
+        <li><new/><span class="premium">First calendar synchronization feature!</span>
+        <li><new/><span class="premium">Calendar sync: Added the possibility to automatically disable an alarm based on all-day events from an associated calendar.</span>
+        <li><span class="standard">Other types of synchronization will be available in future releases</span>
+        <li><new/><span class="premium">Alarm Cards now also show a tooltip indicating if the ringing instance will be skipped and why. Alarms needs to be saved again to enable this feature.</span>
+        <li><new/><span class="free">Added the possibility to snooze an alarm by passing three times a hand very close to the proximity sensor. Needs to be enabled in the settings.</span>
+        <li><new/><span class="free">A warning icon is now displayed next to an override if it is set on a day when the alarm will be disabled.</span>
+        <li><premium/><span class="premium">Google Drive automatic synchronization can now be limited to WiFi connections (enabled by default).</span>
+        <li><fix/><span class="premium">Google Drive automatic sync when editing an alarm.</span>
+    </ul></p>
+
+    <p><span class="version major">3.2</span><ul>
+        <li><new/><span class="major_feature">Online backup/restore available using Google Drive. It does not yet support music files synchronization.</span>
+        <li><new/><span class="premium">FEATURE: Tasker: Added a new plugin which permits to launch the Night mode automatically.</span>
+        <li><new/><span class="free">Night Mode: added the possibility to change the background color.</span>
+        <li><fix/><span class="free">A bug regarding the saving of the custom font color for the night mode. It may need to be set again.</span>
+        <li><new/><span class="premium">Locking an alarm also locks the "Skip" and "Go back" buttons in an alarm card, but not in the permanent notification.</span>
+        <li><new/><span class="premium">Skipping an alarm or going back now displays a message about when the alarm will ring next.</span>
+        <li><fix/><span class="free">A few bugs with local backup/restore (mostly about Android 6 permissions).</span>
+        <li><fix/><span class="premium">Disabling weather forecast when no permission on location granted, even if "city search" option was used on Android 6.</span>
+        <li><fix/><span class="free">TTS not being said when stopping an alarm via Tasker.</span>
+    </ul></p>
+
+    <p><span class="version major">3.2.5</span><ul>
+        <li><fix/><span class="premium">A bug and a crash related to backing up to Google Drive.</span>
+        <li><fix/><span class="premium">Small bugfix related to the display of "disabled periods".</span>
+        <li><new/><span class="premium">City search for weather forecast.</span>
+        <li><fix/><span class="premium">Tasker event plugin being misconfigured (snooze and dismiss) (Premium).</span>
+        <li><new/><span class="premium">New possibility to enable/disable an alarm or all of them after a Tasker event.</span>
+    </ul></p>
+
+    <p><span class="version major">3.1</span><ul>
+        <li><span class="major_feature">Backup! You can now backup and restore your alarms and your settings. For now, the backup is local only, online backup will come later.</span>
+        <li><new/><span class="premium">Temperatures chart! There is a new temperatures chart available. It displays the evolution of the temperature starting three hours before the ringing time of an alarm, up to two days after. It's available for each alarm that has weather forecast enabled and that will ring in less than 48 hours.</span>
+        <li><new/><span class="free">Block snoozing. You can remove the "snooze" possibility for your alarm. Doing so, it will only be possible to dismiss it, and it won't be automatically snoozed.</span>
+        <li><new/><span class="premium">New Tasker plugin: snooze or dismiss your alarm when an event occurs.</span>
+        <li><new/><span class="free">New option to automatically delete non repeating alarms that will have no other occurrence, instead of disabling them.</span>
+        <li><new/><span class="free">Added a new TTS option: say the name of the day, and say the date including the name of the day.</span>
+        <li><fix/><span class="premium">Alarm cloning related to disabled periods and exception times.</span>
+        <li><fix/><span class="free">Timers are now correctly reset when a device is rebooted.</span>
+        <li><fix/><span class="free">Alarm snoozed time calculation in some cases.</span>
+        <li><fix/><span class="free">Some display bugs and a crash with the Timer.</span>
+    </ul></p>
+
+    <p><span class="version major">3.0</span><ul>
+        <li><new/><span class="major_feature">Timer! It works the same as Google's one, but with a few more options.</span>
+        <li><new/><span class="premium">An alarm can be set to ring each week, every two weeks, and so on (up to every 16 weeks).</span>
+        <li><new/><span class="premium">A tasker event can now be linked to all alarms, not only one.</span>
+        <li><fix/><span class="free">Quitting automatically the night mode when under a certain battery level and using the show option.</span>
+        <li><fix/><span class="premium">Tasker: Fixed the dismiss event being sent when an alarm is modified.</span>
+    </ul></p>
+
+    <p><span class="version major">2.11</span><ul>
+        <li><new/><span class="free">Customize the font color in the night mode and in the DayDream.</span>
+        <li><new/><span class="free">A new widget permits to launch the Night Mode directly from the homescreen.</span>
+        <li><new/><span class="free">TTS volume can now be set separately from the ringtone volume.</span>
+        <li><new/><span class="free">A new setting permits to decide if the challenge needs to be solved only to unlock the dismiss button, or for both the snooze and dismiss buttons.</span>
+        <li><fix/><span class="free">A crash occuring when dismissing a recurring alarm that has reached its stop date.</span>
+    </ul></p>
+
+    <p><span class="version major">2.11.1</span><ul>
+        <li><fix/><span class="free">A crash occuring when selecting an audio file with a tool like Zedge.</span>
+        <li><fix/><span class="free">Decreasing or muting volume when lifting the device not working on some cases.</span>
+        <li><fix/><span class="free">Should have fixed the case when an alarm could be killed by the system after a system upgrade.</span>
+        <li><new/><span class="free">Added the possibility to force the display of a fullscreen alarm, even when the screen is on (Beta).</span>
+        <li><fix/><span class="free">Fixed a crash happening when creating a new alarm on devices with faulty TTS engines.</span>
+        <li><fix/><span class="free">A case when the alarm would be muted.</span>
+    </ul></p>
+
+    <p><span class="version major">2.10</span><ul>
+        <li><span class="premium">Notice: Weather forecast will need to be manually refreshed to update the data structure.</span>
+        <li><new/><span class="major_feature">A new "Night mode" that also works as a Daydream. It also features advanced options, some of them limited to Premium users, like weather forecast and touch options.</span>
+        <li><new/><span class="premium">Possibility to change, for a specific day, the time an alarm will go off</span>
+        <li><new/><span class="free">Alarm screen can be displayed in landscape mode.</span>
+        <li><new/><span class="premium">Possibility to select an audio file as a ringtone</span>
+        <li><new/><span class="premium">New challenge : reproduce a text</span>
+        <li><new/><span class="free">TTS messages can now tell weather forecast temperatures.</span>
+        <li><new/><span class="free">New widgets to create in one tap a quick nap alarm.</span>
+        <li><new/><span class="free">App, widget and notifications design.</span>
+        <li><new/><span class="free">The "next alarm" widget now permits to skip to the next alarm or to go back, the same way as the permanent notification.</span>
+        <li><new/><span class="free">The permanent notification now shows the weather forecast icon when using the Wake me up! style.</span>
+        <li><new/><span class="free">Alarm color selection.</span>
+        <li><new/><span class="free">Volume management. The volume seekbar now displays the real volume intensity, and not a percentage of the system volume.</span>
+        <li><new/><span class="free">The maximum volume can also be set for a progressive ringtone. It is not related anymore to the maximum volume set by the system.</span>
+        <li><new/><span class="free">The TTS volume is also set by the volume seekbar.</span>
+        <li><new/><span class="free">Improved TTS time message which now tells the actual time and not the ringing time anymore.</span>
+        <li><new/><span class="free">Many improvements to the dark theme. Dialogs are now themed as well as settings.</span>
+        <li><fix/><span class="free">Cases when the widget did not refresh.</span>
+        <li><fix/><span class="premium">Do not display weather forecast for alarms that will ring in more than 7 days.</span>
+        <li><fix/><span class="premium">Display problem in an alarm card where the weather summary is really long.</span>
+        <li><fix/><span class="free">Sometimes, the permanent notification did not display the good alarm.</span>
+        <li><span class="standard">Added a "Thanks" section.</span>
+        <li><span class="standard">Testing an alarm is now free.</span>
+        <li><span class="standard">Faster startup time, smaller memory footprint, smaller APK size.</span>
+    </ul></p>
+
+    <p><span class="version major">2.10.1</span><ul>
+        <li><fix/><span class="free">Remaining time until next alarm displayed on the widget.</span>
+        <li><fix/><span class="free">Night mode font size on small screens.</span>
+        <li><new/><span class="free">Possibility to change the size of the font for the Night Mode.</span>
+        <li><fix/><span class="premium">Crash while selecting a music file as a ringtone on some devices.</span>
+    </ul></p>
+
+    <p><span class="version major">2.9</span><ul>
+        <li><new/><span class="standard">Week start day can now be set to either Saturday, Sunday or Monday.</span>
+        <li><new/><span class="premium">Possibility to clone an alarm.</span>
+        <li><new/><span class="free">You can now choose between one repeating ringtone, one repeating TTS message or one non-repeating TTS message followed by a repeating ringtone.</span>
+        <li><new/><span class="free">You can now skip the next alarm or go back to the previously skipped one from the permanent notification.</span>
+        <li><new/><span class="free">You can now choose between Android's style and Wake me up! style for the notifications. Wake me up! style is more colorful.</span>
+        <li><new/><span class="premium">Weather forecast on each card also displays the air pressure, sunset time, sunrise time and probability of precipitation.</span>
+        <li><new/><span class="free">TTS ringtone message construction.</span>
+        <li><new/><span class="free">Data refresh on cards.</span>
+        <li><new/><span class="free">Moved some options to improve the interface.</span>
+        <li><fix/><span class="free">Last snooze duration when set to "never".</span>
+        <li><fix/><span class="premium">Display of the wind orientation.</span>
+        <li><fix/><span class="free">The alarm notification not disappearing when an alarm is snoozed and the option to display only one notification at a time is selected.</span>
+        <li><fix/><span class="free">Some colors.</span>
+    </ul></p>
+
+    <p><span class="version major">2.9.1</span><ul>
+        <li><fix/><span class="premium">A skipped alarm could be skipped further when the phone is rebooted.</span>
+    </ul></p>
+
+    <p><span class="version major">2.8</span><ul>
+        <li><new/><span class="free">Possibility to set an alarm length from 1 second to one hour, per alarm.</span>
+        <li><new/><span class="free">Possibility to set, per alarm, if the alarm will auto-snooze or not.</span>
+        <li><new/><span class="free">Possibility to set, per alarm, the number of time an alarm will auto-snooze before being missed.</span>
+        <li><new/><span class="free">Possibility to set a specific alarm duration for its last repeat.</span>
+        <li><new/><span class="premium">Weather forecast also displays max and min temperatures, as well as wind speed and direction, on alarm cards.</span>
+        <li><new/><span class="free">An error is displayed if the TTS engine is not properly setup.</span>
+        <li><new/><span class="premium">Fallback to the selected ringtone (or fallbak ringtone if silent) if the TTS engine is not properly setup.</span>
+        <li><new/><span class="premium">Changed the way the math challenge is displayed. It is not necessary anymore to solve it to snooze the alarm.</span>
+        <li><fix/><span class="free">Next alarm ringing time displayed with a recently missed alarm.</span>
+        <li><fix/><span class="free">A crash with TTS on Samsung devices running 5.0. Thanks to the user who made a really useful bug report!</span>
+        <li><fix/><span class="free">A crash when using Romanian language.</span>
+        <li><fix/><span class="premium">Weather forecast was not updated when using a language not supported by Forecast.io. It now defaults to english.</span>
+    </ul></p>
+    <p><span class="version major">2.8.3</span><ul>
+        <li><new/><span class="free">Added the possibility to hide the notification icon on the status bar for the permanent notification. Notifications about alarms that will soon fire will still display a notification.</span>
+        <li><fix/><span class="premium">Fixed a problem with the duration for new alarms.</span>
+        <li><fix/><span class="premium">Fixed the math challenge being dismissed by the volume buttons even if it should'nt.</span>
+    </ul></p>
+
+    <p><span class="version major">2.7</span><ul>
+        <li><new/><span class="major_feature">Quick nap. You can now define alarms that will ring in 15, 30, 45 or 60 minutes. In the general alarm settings, you can define their settings.</span>
+        <li><fix/><span class="free">Possibility to display only one notification, if multiple alarms are set to be fired in less than two hours.</span>
+        <li><new/><span class="premium">Possibility to skip the next ringing date or to go back to the previous one.</span>
+        <li><new/><span class="free">Possibility make an alarm silent by taking the phone.</span>
+        <li><span class="standard">Translations: greatly improved spanish translation thanks to Luis Diaz!</span>
+        <li><new/><span class="free">Changed the way "wake me up gently" is displayed on a card. The real ringing time is now displayed next to the setup alarm time.</span>
+        <li><span class="standard">No more ads for non-premium users.</span>
+        <li><fix/><span class="free">Progressive ringtone checkbox</span>
+        <li><fix/><span class="premium">Weather background on cards for future dates</span>
+    </ul></p>
+
+    <p><span class="version major">2.7.0.1</span><ul>
+        <li><fix/><span class="free">Error message displaying incorrectly when launching the app on Android 4.3 and 4.4.</span>
+        <li><fix/><span class="free">Alarm schedule display on a small screen.</span>
+    </ul></p>
+	
+
+    <p><span class="version major">2.6.0</span><ul>
+        <li><new/><span class="standard">Revamped the edit alarm screen</span>
+        <li><new/><span class="free">Custom brightness : you can now set progressive brightness per alarm, or choose a specific brightness for your alarm, or stick to your default brightness.</span>
+        <li><new/><span class="free">Text-to-speech options: Wake me up! is now polite (it was not vulgar before!). It will greet you when you wake up, if you'd like to, tell you the date of the day and the time.</span>
+        <li><new/><span class="free">First widget! You can add a widget on your homescreen showing you your next alarm. You are also able to dismiss it provided it will go off soon.</span>
+        <li><new/><span class="free">Non-premium users can now create up to six alarms.</span>
+        <li><new/><span class="free">Notifications can be hidden on a secure lockscreen.</span>
+        <li><new/><span class="premium">Math challenge. Resolve a simple sum to make sure you're awake before snooze and dismiss buttons are displayed.</span>
+        <li><new/><span class="premium">See weather forecast on your alarm screen without text-to-speech.</span>
+        <li><new/><span class="free">Revamped help popups.</span>
+        <li><new/><span class="premium">Removed: Weather TTS global preference. It can now be set per alarm.</span>
+        <li><new/><span class="free">Removed: Progressive brightness settings. It can now be set per alarm.</span>
+        <li><fix/><span class="free">Fixed: permanent notification was sometimes wrong.</span>
+        <li><fix/><span class="free">Other bugfixes</span>
+    </ul></p>
+
+    <p><span class="version major">2.6.3.4</span><ul>
+        <li><fix/><span class="premium">A bug when creating an alarm from Tasker</span>
+        <li><new/><span class="premium">Added an option to manually refresh weather information</span>
+        <li><new/><span class="free">TTS ringtones are now free.</span>
+        <li><fix/><span class="free">A crash that may prevent an alarm to ring</span>
+        <li><fix/><span class="premium">A bug when the good answer for the math challenge is on the lower right corner</span>
+        <li><fix/><span class="premium">Fixed: Brightness management in the edit screen</span>
+        <li><fix/><span class="premium">Fixed: Some widget tinting issues</span>
+        <li><new/><span class="free">Alarm management in case of Android killing the app</span>
+        <li><new/><span class="free">Volume testing will now stop after five seconds in the edit screen</span>
+    </ul></p>
+
+    <p><span class="version major">2.5.0</span><ul>
+        <li><new/><span class="premium">Android Wear: Check on your Wear device when the next alarm will ring.</span>
+        <li><new/><span class="premium">Android Wear: Dismiss or snooze your alarm using your Android Wear device.</span>
+        <li><new/><span class="premium">Weather forecast improvement: Choose to have a weather related background picture for your alarm.</span>
+        <li><new/><span class="premium">Weather forecast improvement: You can now search for a city instead of using your device's localisation system.</span>
+        <li><new/><span class="premium">New Tasker event: Fired alarm</span>
+        <li><new/><span class="premium">New Tasker event: Missed alarm</span>
+        <li><new/><span class="premium">New Tasker event: Enabled alarm</span>
+        <li><new/><span class="premium">New Tasker event: Disabled alarm</span>
+        <li><new/><span class="free">Wake me up gently: your alarm will start ringing before its set time, with a really low volume, increasing progressivly, ensuring you a pleasant awakening.</span>
+        <li><new/><span class="free">Progressive brightness: your phone brightness can now start low and rise like your ringtone.</span>
+        <li><new/><span class="free">The length of a progressive ringtone can now be set for each alarm.</span>
+        <li><new/><span class="free">The "create an alarm" button is not automatically hidden anymore.</span>
+        <li><new/><span class="free">Settings: you can now give a +1 for the app if you like it.</span>
+        <li><span class="standard">Optimized display of the alarm list</span>
+        <li><span class="standard">Bugfixes, of course</span>
+    </ul></p>
+
+    <p><span class="version major">2.5.5</span><ul>
+        <li><new/><span class="premium">Improved weather forecast management</span>
+        <li><new/><span class="free">Possibility to display bigger snooze and dismiss buttons</span>
+        <li><fix/><span class="premium">improved Android Wear connectivity</span>
+        <li><fix/><span class="free">A rare occurring crash</span>
+        <li><fix/><span class="premium">Android Wear alarm launch</span>
+        <li><fix/><span class="premium">Android Wear next alarm display in some cases</span>
+        <li><new/><span class="premium">An Android Watch icon is now shown on each alarm card, indicating is the alarm will be synchronized on the watch or not, if the Android Wear connectivity is activated.</span>
+        <li><fix/><span class="premium">Display of a white alarm on Android Wear</span>
+        <li><fix/><span class="free">Display of an alarm schedule with no specific day set</span>
+    </ul></p>
+
+    <p><span class="version major">2.1</span><ul>
+        <li><new/><span class="premium">Wake me up! is now also a Tasker Event plugin! Dismissing or snoozing an alarm are now event recognized by Tasker. You need to enable Tasker integration in each alarm.</span>
+        <li><new/><span class="free">Reorganized settings</span>
+        <li><new/><span class="premium">Weather forecast can now be enabled alarm by alarm.</span>
+        <li><new/><span class="free">You can now always have a permanent notification displayed showing your next to ring alarm.</span>
+        <li><new/><span class="free">Wake me up! detects if you lift your phone and decreases the volume of your ringtone (to be enabled in the settings).</span>
+        <li><span class="standard">Bugfixes</span>
+    </ul></p>
+
+    <p><span class="version major">2.1.3</span><ul>
+        <li><fix/><span class="premium">Fixed a crash when enabling weather forecast on Android 6</span>
+        <li><fix/><span class="standard">Other bugfixes</span>
+    </ul></p>
+
+    <p><span class="version major">2.0</span><ul>
+        <li><new/><span class="premium">Weather support, with TTS! Wake up knowing if you will need an umbrella!</span>
+        <li><new/><span class="free">You can now define a non repeating alarm which is not tied to a specific day. Enabling it will make it ring on the same day or the next day.</span>
+        <li><new/><span class="premium">Initial tasker support. You can automatically create an alarm. More to come next. Please propose ideas using the Google+ Community!</span>
+        <li><new/><span class="free">A notification now appears when your next scheduled alarm is in silent mode and won't vibrate, warning you that it won't be heard.</span>
+        <li><new/><span class="free">Clicking on a notification will bring its alarm edit screen.</span>
+        <li><fix/><span class="standard">Bugfixes.</span>
+    </ul></p>
+
+    <p><span class="version major">1.9</span><ul>
+        <li><new/><span class="premium">Text-to-speech is possible in place of ringtones!</span>
+        <li><new/><span class="free">You can now setup your alarms to automatically be snoozed instead of missed</span>
+        <li><new/><span class="free">Dark theme for the whole application to rest eyes in the dark</span>
+    </ul></p>
+
+    <p><span class="version major">1.9.5</span><ul>
+        <li><new/><span class="free">You can now snooze your alarm by flipping the phone!</span>
+        <li><new/><span class="free">You can define an interval of time in which the dark theme will be automatically used</span>
+        <li><new/><span class="standard">Reorganized settings</span>
+    </ul></p>
+
+    <p><span class="version major">1.8</span><ul>
+        <li><new/><span class="free">Google Voice integration. You can now create alarms via the "OK Google" command</span>
+        <li><new/><span class="free">Greatly improved the screen to edit alarms</span>
+        <li><new/><span class="free">Testing an alarm will now also play its ringtone and/or vibrate if necessary</span>
+        <li><span class="standard">Bugfixes</span>
+    </ul></p>
+
+    <p><span class="version major">1.8.1 - 1.8.2</span><ul>
+        <li><fix/><span class="free">Corrected the ringtone problem with Android 6.0</span>
+        <li><fix/><span class="free">Corrected the font color problem in the settings with Android 6.0</span>
+    </ul></p>
+
+    <p><span class="version major">1.7</span><ul>
+        <li><new/><span class="free">Decreasing snooze length</span>
+        <li><fix/><span class="standard">Bugfixes</span>
+    </ul></p>
+
+    <p><span class="version major">1.6</span><ul>
+        <li><fix/><span class="standard">Bugfixes</span>
+    </ul></p>
+
+    <p><span class="version major">1.5</span><ul>
+        <li><new/><span class="free">Android 4.3 Jelly Bean compatibility</span>
+        <li><new/><span class="free">Improved alarm edit screen</span>
+        <li><new/><span class="free">Improved animations</span>
+        <li><new/><span class="standard">Optimizations</span>
+        <li><fix/><span class="standard">Bugfixes</span>
+    </ul></p>
+
+    <p><span class="version major">1.0</span><ul>
+        <li><new/><span class="major_feature">First release.</span>
+    </ul></p>
+
+
+	
+</body>
+</html>s
