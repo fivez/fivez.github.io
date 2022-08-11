@@ -10,20 +10,11 @@
 
 
 	<p>
-		<span class="version major">2022</span>
-        <li><new/><span class="major_feature">Android 12 support.</span>
-        <li><new/><span class="major_feature">Material You support (only from Android 12 and above). The User Interface has been rewritten from scratch, using Jetpack Compose.</span>
-        <li><new/><span class="standard">Reworked alarm options. Everything should be simpler to use.</span>
-        <ul>
-		<li><span class="standard">Removed the "Automatically close after dismiss or snooze" option. It will now always automatically close if there is nothing specific to display and never close automatically if there is at least one (weather forecast, calendar events for the day or quote).</span>
-		</ul>
-        <li><new/><span class="standard">Reworked general settings to better follow Android guidelines.</span>
-        <li><new/><span class="standard">Because of Android 12, it is now necessary to grant the "READ_PHONE_STATE" permission if you want a specific lighter ringtone to be used when an alarm or a timer goes off during a call. It is an opt-in option, to be enabled in Settings/Other/Read Phone State.</span>
-        <li><span class="standard">Removed: All Google Connectivity (Google Drive backup and Google Photos backgrounds). Google blocks the application from connecting to Google accounts. They ask me to create a full website about the application and all its features. I will do it, but until then, I have to remove Google connectivity as it is not possible anymore.</span>
-        <li><span class="standard">Removed: Wake Me Up styled notifications. Android 12 broke them.</span>
+		<span class="version minor">202107.11</span>
+        <li><fix/><span class="standard">Fixed an issue with ringtone switching that would set the ringtone to the default ringtone, even if another ringtone was selected.</span>
+        <li><new/><span class="standard">New option to force audio output to be played through the speaker when using a music ringtone and a handset is connected.</span>
 		</ul>
 	</p>
-
 
 	<p>
 		<span class="version minor">202107.10</span>
