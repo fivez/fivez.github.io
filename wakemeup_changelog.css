@@ -8,6 +8,16 @@ fix::before {
 	color:#ff6961;
 }
 
+removed{
+	font-family: 'Work Sans', sans-serif;
+}
+removed::before {
+	content: "[REMOVED] ";
+	font-family: 'Work Sans', sans-serif;
+	font-weight:600;
+	color:#aeb6cf;
+}
+
 new {
 	font-family: 'Work Sans', sans-serif;
 }
