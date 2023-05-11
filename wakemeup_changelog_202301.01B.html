@@ -12,63 +12,42 @@
 	<p>
 		<span class="version major">202301.01</span>
 
-		<br><br><b>2023-02-10</b>
-		        <li><fix/><span class="major_feature">Calendar-based alarms now correctly respect the event timezone.</span>
-		        <li><fix/><span class="standard">Fixed snooze/dismiss with the volume up and down buttons.</span>
-		        <li><new/><span class="standard">Added new options to setup the Alarm Clock widget.</span>
-
-		<br><br><b>2023-02-10</b>
-		        <li><fix/><span class="standard">Fixed a few more bugs, related the Alarm Screen options.</span>
-		        <li><new/><span class="standard">Added a new option to switch the position of the Snooze and Dismiss buttons. Available in Settings > Alarms.</span>
-		        <li><new/><span class="standard">Simpler configuration of the layout of the Alarm Screen. All layouts can now switch between Buttons or a Sliding icon.</span>
-
-		<br><br><b>2023-02-08</b>
-		        <li><fix/><span class="standard">Fixed a few more small bugs, some related to timers.</span>
-		        <li><new/><span class="standard">Added an easy way to remove "Start scheduling on" dates. If those dates are far in the past, it may slow the scheduling computing. If you find it to be slow, please set a later "Start scheduling on" date or remove it.</span>
-		        <li><new/><span class="standard">New Configuration options for the Next Alarm widget (text sizes, show/hide label, date or buttons).</span>
-		        <li><new/><span class="standard">Starting with Android 12, a new permission is mandatory to schedule reliable alarms. Some manufacturers do not grant it automatically. In this case, the application now correctly asks for it on startup.</span>
-		        <li><new/><span class="standard">Better customization of the sensor intensity in the Advanced settings. It won't change the fact that the Proximity sensor used to detect the hand wave needs to hand to be at less than 5 cm from the screen.</span>
-		        <li><new/><span class="standard">Added indications about how the application detects motion (phone lifted, hand wave...) in the Advanced settings.</span>
-
-		<br><br><b>2023-02-03</b>
-		        <li><fix/><span class="standard">Fixed an issue when editing a calendar linked to an alarm.</span>
-		        <li><new/><span class="standard">Improved performances.</span>
-		        <li><fix/><span class="standard">Fixed an issue when skipping an alarm linked to a calendar, with a deactivating calendar that would make the alarm skip all next events. In this case, the application would become unresponsive.</span>
-		        <li><new/><span class="standard">Now, when ads are disabled and enabled premium alams are therefore also deactivated, a new specific category shows those alarms. When ads are enabled again, or the Premium Pack is purchased, those specific alarms are automatically enabled again.</span>
-		        <li><fix/><span class="standard">Fixed an issue that occurred when the computation of the scheduling of an alarm took more than 10 seconds, because of linked calendars, and would be cancelled by the system.</span>
-
-		<br><br><b>2023-01-25</b>
-		        <li><fix/><span class="standard">Reworked alarm cards display. A "More" buttons is now displayed on all cards and opens a Dialog that displays what was previously displayed on expandable cards only.</span>
-		        <li><fix/><span class="standard">Fixed some issues with text readibility in dark mode.</span>
-		        <li><fix/><span class="standard">Fixed some crashes.</span>
-		        <li><fix/><span class="standard">The start date set for an alarm that won't repeat every weeks (or every x weeks) and that is in the past is now correctly ignored.</span>
-
-		<br><br><b>2023-01-17</b>
-		        <li><fix/><span class="standard">The Snooze and Dismiss buttons are not inverted anymore. A new option to invert them again will be added in the next beta.</span>
-		        <li><fix/><span class="standard">The 250ms delay for the Snooze or Dismiss actions to be effectively registered is removed. A new option to add the delay again will be added in the next beta.</span>
-		        <li><fix/><span class="standard">Fixed some crashes and bugs.</span>
-
-		<br><br><b>2023-01-14</b>
-		        <li><new/><span class="standard">A new icon is now displayed on the top right corner of the main screen to indicate that the version is from the Beta Channel.</span>
-		        <li><fix/><span class="standard">Fixed multiple crashes as well as display issues and backup/restore issues.</span>
-		<br><br><b><b>First Beta</b>
-        <li><new/><span class="major_feature">Android 12 support.</span>
+        <li><new/><span class="major_feature">Android 13 support.</span>
         <li><new/><span class="major_feature">Material You support (only Android 12 and above). The User Interface has been rewritten from scratch, using Jetpack Compose.</span>
         <li><new/><span class="major_feature">When editing the options of an alarm, all settings are automatically saved immediately. If an option that impacts the scheduling of the alarm is modified, the alarm is also automatically rescheduled.</span>
         <li><new/><span class="major_feature">It is now possible, for a calendar-based alarm, to set the alarm to ignore all events before or after a certain time, on the same day. By doing so, just set a start hour, or an end hour. If only a Start Hour is defined, all events on the same day after it will be ignored. If only an End Hour is defined, all events on the same day before it will be ignored. If both are defined, it will behave like before, ignoring all events between those two times.</span>
         <li><new/><span class="major_feature">The Edit Alarm screen now displays a hideable preview on top. This preview is updated as changes are made.</span>
-        <li><new/><span class="standard">Reworked all WearOS screens.</span>
+        <li><new/><span class="major_feature">Reworked all WearOS screens.</span>
+        <li><new/><span class="major_feature">[TIMEZONES] A TimeZone can now be set on Scheduled alarms to force them always be set regarding a specific timezone.</span>
+        <li><new/><span class="major_feature">[TIMEZONES] Calendar-based alarms respect the timezone set for an event.</span>
+
+		<li><new/><span class="standard">A new icon is now displayed on the top right corner of the main screen to indicate that the version is from the Beta Channel.</span>
         <li><new/><span class="standard">[Android 13] Monochrome icon.</span>
         <li><new/><span class="standard">If an alarm has at least one setup error, an icon is now displayed above the alarm card. Tapping on it will show the errors.</span>
         <li><new/><span class="standard">Reworked alarm options. Everything should be simpler to use.</span>
         <li><new/><span class="standard">[WIDGETS] Better widgets.</span>
         <li><new/><span class="standard">[WIDGETS] The widget to launch the Night Mode is now replaced by an option in the Night Mode settings to add an icon on the homescreen. The widgets to setup Quick Naps are now replaced by better widgets that take into account custom Quick Naps durations.</span>
         <li><new/><span class="standard">[TASKER] Reworked Tasker integration and all Tasker plugins. All alarms are linked to Tasker by default. Tasker plugins are still tied to Premium Pack. Without either the Premium Pack or Ads activation, Tasker events won't be sent.</span>
+        <li><new/><span class="standard">New In-App update checker that will show when a new update is available.</span>
+        <li><new/><span class="standard">The new Android Photo picker should now be enabled for all supported Android versions.</span>
         <li><new/><span class="standard">Reworked general settings to better follow new Android guidelines.</span>
         <li><new/><span class="standard">Because of Android 12, it is now necessary to grant the "READ_PHONE_STATE" permission if you want a specific lighter ringtone to be used when an alarm or a timer goes off during a call. It is an opt-in option, to be enabled in Settings/Other/Read Phone State.</span>
+        <li><new/><span class="standard">Gentle Wake Up & TimeZone are now displayed as badges on alarm cards to be more visible and take less space.</span>
+        <li><new/><span class="standard">Weather forecast is now translated for French, Spanish, German, Czech & Italian.</span>
+        <li><new/><span class="standard">[TIMEZONES] New option to choose wether to display the time for a scheduled alarm for the current time zone or the time zone of the alarm (Settings -> Display).</span>
+        <li><new/><span class="standard">[TIMEZONES] New option to choose how the Time Zone offset will be displayed: from GMT or from the current Time Zone (Settings -> Display).</span>
+        <li><new/><span class="standard">Added a new option to switch the position of the Snooze and Dismiss buttons. Available in Settings > Alarms.</span>
+		<li><new/><span class="standard">New Italian translation thanks to Alessio Maramici! Thank you!</span>
+		
+		<br><br>
+		<li><fix/><span class="standard">Fixed multiple bugs as well as display issues and backup/restore issues.</span>
+
+		<br><br>
 		<li><removed/><span class="standard">"Automatically close after dismiss or snooze" option. It will now always automatically close if there is nothing specific to display and never close automatically if there is at least one (weather forecast, calendar events for the day or quote).</span>
         <li><removed/><span class="standard">All Google Account connectivity (Google Drive backup and Google Photos backgrounds). Google blocks the application from connecting to Google accounts. They ask to create a full website about the application and all its features. I will do it, but until then, I have to remove Google connectivity as it is not possible anymore to use it.</span>
         <li><removed/><span class="standard">Wake Me Up styled notifications. Android 12 broke them.</span>
+
+               
 		</ul>
 	</p>
 
