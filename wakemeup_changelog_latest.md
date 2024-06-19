@@ -1,3 +1,9 @@
+# 2024.02 Beta
+
+* __[FIX]__ Fixed an issue with calendar synchronization for alarms that are activated or deactivated based on a calendar. 
+* __[FIX]__ Fixed an issue with alarms not always receiving a Dismiss or Snooze event from Tasker. 
+* __[FIX]__ Improved performances
+
 # 2024.01
 
 * __[NEW]__ Added a warning about Adaptative Battery being enabled
