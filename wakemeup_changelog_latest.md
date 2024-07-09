@@ -2,7 +2,8 @@
 
 * __[FIX]__ Fixed an issue with calendar synchronization for alarms that are activated or deactivated based on a calendar. 
 * __[FIX]__ Fixed an issue with alarms not always receiving a Dismiss or Snooze event from Tasker. 
-* __[FIX]__ Improved performances
+* __[FIX]__ Fixed some crashes specific to Samsung devices.
+* __[FIX]__ Improved performances and other small bugfixes.
 
 # 2024.01
 
