@@ -1,3 +1,8 @@
+# 2024.03
+
+* __[FIX]__ Fixed an issue with the date picker on small resolutions. 
+* __[FIX]__ Improved performances and other small bugfixes.
+
 # 2024.02
 
 * __[FIX]__ Fixed an issue with calendar synchronization for alarms that are activated or deactivated based on a calendar. 
