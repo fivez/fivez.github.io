@@ -1,4 +1,7 @@
-# 2025.01
+# 2025.05
+
+* __[FIX]__ New option: add a delay to the music ringtone playback. Starting with Android 15, music ringtones may not play. This new setting is available in the general settings, “Other” subsection. It will help making sure that music files playback starts as it should. Please activate this option if and only if you have issues with music file playback.
+
 
 * __[NEW]__ Android 15 support. 
 * __[NEW]__ New Swedish translation. Thanks to Johan Wetterberg.
