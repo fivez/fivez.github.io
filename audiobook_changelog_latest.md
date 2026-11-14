@@ -1,4 +1,3 @@
-* __[FIX]__ Bug fixes and performance improvements
 * __[NEW]__ Brand new Material 3 Expressive user experience!
 * __[NEW]__ New backup features: better backups, automatic backups
 * __[NEW]__ Retrieve book information from OpenLibrary
