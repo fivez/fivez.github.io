@@ -3,7 +3,7 @@
 * __[NEW]__ New backup features: better backups, automatic backups
 * __[NEW]__ Retrieve book information from OpenLibrary
 * __[NEW]__ New powerful search
-* __[NEW]__ [PREMIUM] Reading statistics
+* __[NEW]__ Reading statistics
 * __[NEW]__ [PREMIUM] Reading list
 * __[NEW]__ [PREMIUM] [BETA] OPDS support for books and audiobooks
 * __[NEW]__ [PREMIUM] New series cover generator
